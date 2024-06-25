@@ -1,0 +1,14 @@
+- id: typos
+  name: typos
+  description: Run `typos`, requires https://github.com/crate-ci/typos
+  entry: typos.sh
+  language: script
+  files: \.*$
+  pass_filenames: false
+- id: golangci-lint
+  name: golangci-lint
+  description: Run `golangci-lint`, requires https://github.com/golangci/golangci-lint
+  entry: golangci-lint.sh
+  language: script
+  files: \.*$
+  pass_filenames: false
